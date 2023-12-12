@@ -7,4 +7,20 @@ public class Leche
         grumos = tieneGrumos;
         litros = litrosLeche;
     }
+    
+    public boolean getGrumos() {
+        return grumos;
+    }
+    
+    public void setGrumos(boolean grum) {
+        grumos = grum;
+    }
+    
+    public double getLitros() {
+        return litros;
+    }
+    
+    public void setLitros(double lit) {
+        litros = lit;
+    }
 }
