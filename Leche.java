@@ -23,4 +23,15 @@ public class Leche
     public void setLitros(double lit) {
         litros = lit;
     }
+    
+    public void imprimirDetales(){
+        String conversion = "";
+        if (grumos == true){
+            conversion = "Si";
+        }
+        else{
+            conversion = "No";
+        }
+        System.out.println( conversion +" contiene grumos" + "|Contiene " + litros + "L de leche");
+    }
 }
