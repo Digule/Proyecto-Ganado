@@ -20,4 +20,18 @@ public class Vaca {
     public Leche getLeche() {
         return lech_vaca;
     }
+    
+    public void setNombre(String cambiarNombre){
+        nombre = cambiarNombre;
+    }
+    
+    public void setPeso(int cambiarPeso){
+        peso = cambiarPeso;
+    }
+    
+    public void setNombre(boolean cambiarGrumos, double cambiarLitros){
+        lech_vaca.setGrumos(cambiarGrumos);
+        lech_vaca.setLitros(cambiarLitros);
+    }
+    
 }
