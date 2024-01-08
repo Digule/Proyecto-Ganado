@@ -29,9 +29,20 @@ public class Vaca {
         peso = cambiarPeso;
     }
     
-    public void setNombre(boolean cambiarGrumos, double cambiarLitros){
+    public void setLeche(boolean cambiarGrumos, double cambiarLitros){
         lech_vaca.setGrumos(cambiarGrumos);
         lech_vaca.setLitros(cambiarLitros);
     }
     
+    public void imprimirDetalles() {
+        String contiene = "";
+        if (lech_vaca.getGrumos()) {
+            contiene = "si";
+        }
+        else {
+            contiene = "no";
+        }
+        System.out.println("El nombre de esta vaca es: " + nombre + " |La vaca pesa: " + peso + " |La vaca tiene " + lech_vaca.getLitros() + " L de leche" + " |Esta leche " + contiene
+        + " contiene grumos");
+    }
 }
